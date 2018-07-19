@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+.big{
+  font-size: 250%;
+}
+.bigtwo{
+  font-size:150%;
+}
+.vert{
+  display: flex;
+  flex-direction:column;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+}
+.columnone {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+    background-image: url("pexels-photo.jpg");
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+
+}
+.containerblankfive {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+.containerblank {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.containerblanktwo {
+  position: relative;
+  height: : 100%;
+  width: 50px;
+}
+.containerblankthree {
+  position: relative;
+  height: : 100%;
+  width: 430px;
+}
+.containerblankfour {
+  position: relative;
+  height: : 100%;
+  width: 80px;
+}
+.containerthree {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction:row;
+}
+.containerfive {
+  position: relative;
+  width: 100%;
+  background-image: url("tomorrow.jpg");
+  background-size: 100vw;
+  background-position: center;
+  height: 460px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.containertwo {
+  position: relative;
+  width: 100%;
+  background-image: url("school.jpg");
+  background-size: 100vw;
+  background-position: center;
+  height: 460px;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.containerone {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  /*
+  background-image: url("son.jpg");
+  background-size: cover;-->
+  text-align: left;*/
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.conone {
+  position: relative;
+  width: 20%;
+
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.conone:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  text-align: left;
+
+}
+.textyellow {
+  background-color: #d5f4e6;
+
+}
+.textone {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="row">
+    <div class="containerone">
+
+      <div class= "big">
+        <div class = "text">
+          <audio controls>
+            <source src="dream.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+        <h1 style="color:#FFFFFF">Yoo Byoung Woo</h1>
+        <p style="color:#FFFFFF">Mr.Yoo is a software developer based in Korea Digital Media High School</p>
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="containertwo" >
+
+  </div>
+</div>
+<div class="containerblank">
+</div>
+<div class = "containerthree">
+  <div class = "containerblankfour"></div>
+<div class="conone">
+  <img src = "arduino.png" class= "image">
+  <div class="overlay">
+    <div class="textone">IoT</div>
+
+  </div>
+
+</div>
+<div class = "containerblanktwo">
+</div>
+<div class = "vert">
+<div class = "bigtwo"><h1>Internet of Things</h1></div>
+<h3>Beyoung Woo uses Arduino and Raspberry Pi to create IoT devices. </br>He has conducted various projects such as a psycho-therapy
+ robot</br> and a smart home system.</h3>
+</div>
+
+</div>
+<div class="containerblankfive">
+</div>
+<div class = "containerthree">
+  <div class="containerblankthree"></div>
+  <div class = "vert">
+  <div class = "bigtwo"><h1>Big Data and AI</h1></div>
+  <h3>Beyoung Woo has experience with big data. </br>He uses Python libraries such as numpy,pandas and matplotlib.</br> He is planning to learn AI next month.</h3>  </div>
+  <div class = "containerblanktwo">
+  </div>
+<div class="conone">
+  <img src = "ai.png" class= "image">
+  <div class="overlay">
+    <div class="textone">Big Data </br>
+  & AI</div>
+
+  </div>
+
+</div>
+<div class = "containerblanktwo">
+</div>
+
+</div>
+<div class="containerblankfive">
+</div>
+<div class = "containerthree">
+  <div class = "containerblankfour"></div>
+<div class="conone">
+  <img src = "web.png" class= "image">
+  <div class="overlay">
+    <div class="textone">Web</div>
+
+  </div>
+
+</div>
+<div class = "containerblanktwo">
+</div>
+<div class = "vert">
+<div class = "bigtwo"><h1>Web Programming</h1></div>
+<h3>Beyoung Woo uses HTML and CSS to create beautiful websites. </br>He is looking forward to learning Javascript</br> and Server-side programming.</h3>
+</div>
+
+</div>
+<div class="containerblankfive">
+</div>
+<div class = "containerthree">
+  <div class="containerblankthree"></div>
+  <div class = "vert">
+  <div class = "bigtwo"><h1>Android</h1></div>
+  <h3>Beyoung Woo has experience Android Studio. </br>He knows the basics of android studio such Java or XML files.</br>  He is planning to learn more next month.</h3>  </div>
+  <div class = "containerblanktwo">
+  </div>
+<div class="conone">
+  <img src = "android.png" class= "image">
+  <div class="overlay">
+    <div class="textone">Android </br>
+  & AI</div>
+
+  </div>
+
+</div>
+<div class = "containerblanktwo">
+</div>
+
+</div>
+</div>
+<div class="containerblankfive">
+</div>
+
+  <div class="containerfive" >
+    <div class="containerblank">
+    </div>
+    <h1><mark>Beyoung Woo dreams of building a better tomorrow.</mark>
+</h1>
+  </div>
+</body>
+</html>
